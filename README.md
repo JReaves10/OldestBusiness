@@ -3,8 +3,8 @@
 ## Discovering geographical details about the oldest businesses in the world
 
 ## Key Insights
--Kongō Gumi in Japan, founded in 578, stands as the longest-running business in the world, highlighting remarkable adaptability.
--Construction in Asia (Kongō Gumi, 578) and postal services in Africa (Mauritius Post, 1772) are among the earliest established sectors, emphasizing foundational infrastructure development.
+- Kongō Gumi in Japan, founded in 578, stands as the longest-running business in the world, highlighting remarkable adaptability.
+- Construction in Asia (Kongō Gumi, 578) and postal services in Africa (Mauritius Post, 1772) are among the earliest established sectors, emphasizing foundational infrastructure development.
 
 ## How to Run
 3 separate SQL queries to be ran:
