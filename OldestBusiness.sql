@@ -1,20 +1,20 @@
 -- What is the oldest business on each continent?
-SELECT sub.continent,
-	   sub.country,
-	   sub.business,
-	   sub.year_founded
+SELECT	sub.continent,
+       	sub.country,
+       	sub.business,
+       	sub.year_founded
 FROM(
-	SELECT continent,
-	       country,
-	   	   business,
-	       year_founded
+	SELECT	continent,
+	       	country,
+	   	business,
+	       	year_founded
 	FROM businesses
 	JOIN countries
 	USING(country_code)
 ) AS sub
 JOIN(
-	SELECT continent,
-		   MIN(year_founded) AS year_founded
+	SELECT	continent,
+		MIN(year_founded) AS year_founded
 	FROM businesses
 	JOIN countries
 	USING(country_code)
@@ -33,8 +33,8 @@ WITH all_businesses AS(
 	SELECT *
 	FROM new_businesses
 )
-SELECT continent,
-	   COUNT(country) AS countries_without_businesses
+SELECT	continent,
+	COUNT(country) AS countries_without_businesses
 FROM countries
 LEFT JOIN all_businesses
 USING(country_code)
@@ -42,11 +42,11 @@ WHERE business IS NULL
 GROUP BY continent;
 
 -- Which business categories are best suited to last over the course of centuries?
-SELECT continent,
-	   category,
-	   MIN(year_founded) AS year_founded
+SELECT 	continent,
+	category,
+	MIN(year_founded) AS year_founded
 FROM countries
-INNER JOIN businesses USING(country_code)
-INNER JOIN categories USING(category_code)
+JOIN businesses USING(country_code)
+JOIN categories USING(category_code)
 GROUP BY continent, category
 ORDER BY continent, category;
