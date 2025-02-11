@@ -23,6 +23,13 @@ The dataset consists of three tables:
 - **category_code** - Code for the business category.
 - **category** - Description of the business category.
 
+## Installation
+Clone this repository and install the necessary libraries:
+```bash
+git clone https://github.com/JReaves10/OldestBusiness
+cd OldestBusiness
+```
+
 ## Code Explanation
 ### 1. Identifying the Oldest Business on Each Continent
 To determine the oldest business on each continent, we use the following query:
