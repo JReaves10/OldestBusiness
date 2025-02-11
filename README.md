@@ -34,36 +34,38 @@ cd OldestBusiness
 ### 1. Identifying the Oldest Business on Each Continent
 To determine the oldest business on each continent, we use the following query:
 
-1
+![](first.png)
 
 #### Output:
 A table listing the oldest businesses on each continent, including their country, business name, and founding year.
 
-11
+![](first1.png)
 
 ## 2. Counting Missing Business Data Per Continent
 To count how many countries per continent lack data on the oldest businesses, we use:
 
-2
+![](second.png)
 
 #### Output:
 A table listing continents and the number of countries without business data.
 
-22
+![](second2.png)
 
 ## 3. Identifying Long-Lasting Business Categories
 To determine which business categories have lasted the longest, we use:
 
-3
+![](third.png)
 
 #### Output:
 A table listing the oldest business categories per continent and their founding year.
 
-33
+![](third3.png)
+
+**. . .**
 
 ### Results
 - **Oldest Businesses**: **Kongō Gumi** in **Japan** (founded in **578**) is the **oldest business** in the dataset.
-- **Data Gaps**: **Several countries, particularly in Africa**, lack records on their oldest businesses, with around **15 missing data points**.
+- **Data Gaps**: **Several countries, particularly in Oceania**, lack records on their oldest businesses, with **10 countires missing data**.
 - **Resilient Industries**: The **wine industry in Europe** and the **banking sector in Asia** are among the **longest-lasting business categories**, highlighting industries with enduring success.
 
 ## Conclusion
